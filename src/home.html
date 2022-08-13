@@ -1,16 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"FarmVest"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"FarmVest"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main main-block">
+				<div data-prlx-parent class="main-block__container-big">
+					<div class="main-block__container">
+						<div class="main-block__content">
+							<h1 class="main-block__title title">
+								The easiest and fastest way to <span>Invest</span> in Agriculture
+							</h1>
+							<div class="main-block__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum
+								tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,
+								consectetur
+							</div>
+							<!-- ! Time 11:00 -->
+							<!-- ? Есть сниппет form в form.scss -->
+							<!-- ? Расскоментировать стр79 в app.js, чтобы пропадал placeholder -->
+							<!-- ? Расскоментировать стр87 в app.js, чтобы email мог пройти валидацию  -->
+							<div class="main-block__form">
+								<form action="#" class="form">
+									<input data-required="email" autocomplete="off" type="text" name="form[]"
+										data-error="Error" placeholder="Enter your email" class="form__input">
+									<button type="submit" class="form__button button">Get Started</button>
+								</form>
+							</div>
+						</div>
+						<!-- ! Time 52:05 -->
+						<!-- ? Расскоментировать стр 69 в app.js, чтобы появился Модуль параллакса мышью -->
+						<!-- ? Расскоментировать стр 171 в app.js, чтобы появился Модуль поекранной прокрутки -->
+						<div data-coefficient="100" data-prlx data-direction="1"
+							class="main-block__icons icons-main-block">
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300"
+								class="icons-main-block__circle icons-main-block__circle_1"></div>
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" data-prlx-dxr data-prlx-dyr
+								class="icons-main-block__circle icons-main-block__circle_2"></div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10"
+								class="icons-main-block__item icons-main-block__item_1">
+								<img src="@img/main-block/icons/01.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr
+								class="icons-main-block__item icons-main-block__item_2">
+								<img src="@img/main-block/icons/02.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10"
+								class="icons-main-block__item icons-main-block__item_3">
+								<img src="@img/main-block/icons/03.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr
+								class="icons-main-block__item icons-main-block__item_4">
+								<img src="@img/main-block/icons/04.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10"
+								class="icons-main-block__item icons-main-block__item_5">
+								<img src="@img/main-block/icons/05.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr
+								class="icons-main-block__item icons-main-block__item_6">
+								<img src="@img/main-block/icons/06.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10"
+								class="icons-main-block__item icons-main-block__item_7">
+								<img src="@img/main-block/icons/07.svg" alt="Icon">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ! Time 01:28:00 -->
+			<div class="page__partners partners">
+				<div class="partners__container-big">
+					<div class="partners__container">
+						<div class="partners__item">
+							<img src="@img/partners/01.svg" alt="Partners">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/02.svg" alt="Partners">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/03.svg" alt="Partners">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/04.svg" alt="Partners">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/05.svg" alt="Partners">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ! Time 01:39:00 -->
+			<section data-prlx-mouse-wrapper class="page__how how">
+				<div class="how__container-big">
+					<div class="how__container">
+						<div class="how__content">
+							<h2 class="how__title title title_s64">
+								How <span>FarmVest</span> Works
+							</h2>
+							<div class="how__text text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+							<div class="how__steps steps-how">
+								<div class="steps-how__item">
+									<div class="steps-how__icon">
+										<img src="@img/how-it-works/icons/01.svg" alt="Icon">
+									</div>
+									<div class="steps-how__body">
+										<div class="steps-how__title">Download FarmVest</div>
+										<div class="steps-how__text text">Start by downloading FarmVest app on your Android or IOS</div>
+									</div>
+								</div>
+								<div class="steps-how__item">
+									<div class="steps-how__icon">
+										<img src="@img/how-it-works/icons/02.svg" alt="Icon">
+									</div>
+									<div class="steps-how__body">
+										<div class="steps-how__title">Create account</div>
+										<div class="steps-how__text text">Start by downloading FarmVest app on your Android or IOS</div>
+									</div>
+								</div>
+								<div class="steps-how__item">
+									<div class="steps-how__icon">
+										<img src="@img/how-it-works/icons/03.svg" alt="Icon">
+									</div>
+									<div class="steps-how__body">
+										<div class="steps-how__title">Link your bank account</div>
+										<div class="steps-how__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+									</div>
+								</div>
+								<div class="steps-how__item">
+									<div class="steps-how__icon">
+										<img src="@img/how-it-works/icons/04.svg" alt="Icon">
+									</div>
+									<div class="steps-how__body">
+										<div class="steps-how__title">Start Investing</div>
+										<div class="steps-how__text text">Start by downloading FarmVest app on your Android or IOS</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-prlx-parent class="how__image image-block">
+							<div data-coefficient="50" data-prlx data-direction="-1" class="image-block__item">
+								<img src="@img/how-it-works/image.jpg" alt="Image">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" class="image-block__circle image-block__circle_1"></div>
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" data-prlx-dxr data-prlx-dyr class="image-block__circle image-block__circle_2"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

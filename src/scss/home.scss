@@ -1,3 +1,246 @@
 //====================================================================================================
+//====================================================================================================
+.main-block {
+	// .main-block__container-big
+	&__container-big {
+		position: relative;
+	}
+	// .main-block__container
+	&__container {
+	}
+	// .main-block__content
+	&__content {
+		position: relative;
+		z-index: 2;
+		@include adaptiveValue("padding-top", 250, 130);
+		@include adaptiveValue("padding-bottom", 200, 50);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	// .main-block__title
+	&__title {
+		max-width: rem(750);
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 69, 30);
+		}
+	}
+	// .main-block__text
+	&__text {
+		max-width: rem(570);
+		line-height: 180%;
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 48, 35);
+		}
+	}
+	// .main-block__form
+	&__form {
+		@media (max-width: em(430)) {
+			width: 100%;
+		}
+	}
+	// .main-block__icons
+	&__icons {
+	}
+}
+
+//========================================================================================================================================================
+// Здесь стили всех иконочек значков time 52:05 и кругов левого угла time 37:30
+.icons-main-block {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	@media (max-width: $mobile) {
+		opacity: 0.2;
+	}
+	// .icons-main-block__item
+	&__item {
+		position: absolute;
+		// .icons-main-block__item_1
+		&_1 {
+			top: percent(675, 974);
+			left: rem(15);
+		}
+		// .icons-main-block__item_2
+		&_2 {
+			top: percent(380, 974);
+			left: percent(237, 1620);
+		}
+		// .icons-main-block__item_3
+		&_3 {
+			top: percent(757, 974);
+			left: percent(403, 1620);
+		}
+		// .icons-main-block__item_4
+		&_4 {
+			top: percent(134, 974);
+			left: percent(1149, 1620);
+		}
+		// .icons-main-block__item_5
+		&_5 {
+			top: percent(419, 974);
+			left: percent(1325, 1620);
+		}
+		// .icons-main-block__item_6
+		&_6 {
+			top: percent(776, 974);
+			left: percent(1321, 1620);
+		}
+		// .icons-main-block__item_7
+		&_7 {
+			top: percent(367, 974);
+			right: rem(15);
+		}
+	}
+	// .icons-main-block__circle
+	// time 37:30
+	&__circle {
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include adaptiveValue("width", 585, 350);
+		@include adaptiveValue("height", 585, 350);
+		&::before {
+			content: "";
+			display: block;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			width: 100%;
+			height: 100%;
+		}
+		// .icons-main-block__circle_1
+		&_1 {
+			&::before {
+				transform: translate(calc(-50% - rem(28)), -37%);
+			}
+		}
+		// .icons-main-block__circle_2
+		&_2 {
+			&::before {
+				transform: translate(calc(-50% + rem(27)), -46%);
+			}
+		}
+	}
+}
+//====================================================================================================
+
+//====================================================================================================
+.partners {
+	@include adaptiveValue("padding-bottom", 200, 50);
+	// .partners__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: rem(25);
+		align-items: center;
+		flex-wrap: wrap;
+		@media (max-width: em(1100)) {
+			justify-content: center;
+		}
+	}
+	// .partners__item
+	&__item {
+		text-align: center;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+//========================================================================================================================================================
+.how {
+	@include adaptiveValue("padding-bottom", 100, 25);
+	// .how__container
+	&__container {
+		display: grid;
+		row-gap: rem(30);
+		@media (min-width: $tablet) {
+			grid-template-columns: 1fr percent(750, 1420);
+		}
+	}
+	// .how__content
+	&__content {
+		@include adaptiveValue("padding-right", 95, 30, 1420, 992, 2);
+	}
+	// .how__title
+	&__title {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 30, 20);
+		}
+		@media (max-width: $mobileSmall) {
+			text-align: center;
+		}
+	}
+	// .how__text
+	&__text {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 48, 30);
+		}
+		@media (max-width: $mobileSmall) {
+			text-align: center;
+		}
+	}
+	// .how__steps
+	&__steps {
+	}
+	// .how__image
+	&__image {
+	}
+}
+
+.steps-how {
+	@media (max-width: $mobileSmall) {
+		text-align: center;
+	}
+	// .steps-how__item
+	&__item {
+		max-width: rem(490);
+		display: flex;
+		align-items: flex-start;
+		gap: rem(32);
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 48, 30);
+		}
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	// .steps-how__icon
+	&__icon {
+		border-radius: 50%;
+		flex: 0 0 rem(110);
+		width: rem(110);
+		height: rem(110);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(0, 128, 0, 0.1);
+	}
+	// .steps-how__body
+	&__body {
+	}
+	// .steps-how__title
+	&__title {
+		font-size: rem(20);
+		font-weight: 700;
+		&:not(:last-child) {
+			margin-bottom: rem(16);
+		}
+	}
+	// .steps-how__text
+	&__text {
+	}
+}
+//========================================================================================================================================================
+
+//========================================================================================================================================================
 
 //====================================================================================================

@@ -8,10 +8,12 @@
 	transition: all 0.3s ease 0s;
 	@include adaptiveValue("padding-top", 60, 10);
 	@include adaptiveValue("padding-bottom", 60, 10);
+
+	// Добавление классов к шапке time 01:16, раскоментировать стр 171 в app.js  
 	&._header-scroll {
 		padding-top: rem(20);
 		padding-bottom: rem(20);
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.7);
 	}
 	// .header__container-big
 	&__container-big {

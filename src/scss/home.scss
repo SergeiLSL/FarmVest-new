@@ -132,12 +132,12 @@
 
 //====================================================================================================
 .partners {
-	@include adaptiveValue("padding-bottom", 200, 50);
+	@include adaptiveValue("padding-bottom", 200, 70);
 	// .partners__container
 	&__container {
 		display: flex;
 		justify-content: space-between;
-		gap: rem(25);
+		gap: rem(30);
 		align-items: center;
 		flex-wrap: wrap;
 		@media (max-width: em(1100)) {

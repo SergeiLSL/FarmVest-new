@@ -1,0 +1,9 @@
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #263238;
+		color: #fff;
+	}
+	.header__logo {
+		filter: invert(0);
+	}
+}

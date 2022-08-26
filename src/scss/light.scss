@@ -1,0 +1,118 @@
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #ffffff;
+		color: #263238;
+	}
+	.header__logo {
+		filter: invert(1);
+	}
+	.icon-menu {
+		span,
+		&::before,
+		&::after {
+			content: "";
+			background-color: #263238;
+		}
+	}
+	.form {
+		background-color: #fff;
+		background: rgba(38, 50, 56, 0.1);
+	}
+	.icons-main-block {		
+		&__circle::before {
+			border: 1px solid #008000;
+		}
+		&__item {
+			filter: invert(1);			
+		}
+	}
+	.partners__item {
+		filter: invert(1);
+	}
+	.title {
+		color: #263238;
+		span {
+			color: $greenColor;
+		}
+	}
+	.image-block {
+		background: rgba(0, 128, 0, 0.05);
+		&__circle {
+			&::before {
+				content: "";
+				border: 1px solid #008000;
+			}
+		}
+	}
+	.spollers-pathway {
+		// .spollers-pathway__item
+		&__item {
+			background: rgba(0, 128, 0, 0.05);
+		}
+	}
+	.button {
+		background-color: #008000;
+		color: #ffffff;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #1b8b1b;
+			}
+		}
+		&_border {
+			background-color: transparent;
+			border: 1px solid #263238;
+			padding: rem(20) rem(25);
+			color:#263238;
+			@media (any-hover: hover) {
+				&:hover {
+					border: 1px solid #008000;;
+					color: #008000;
+					background-color: #d5fcd5;;
+				}
+			}
+		}
+	}
+	.steps-why {
+		// .steps-why__item
+		&__item {
+			&::before {
+				content: counter(item);
+				background: rgba(0, 128, 0, 0.1);
+				color:#008000;
+			}
+		}
+	}
+	.item-review {
+		background: rgba(0, 128, 0, 0.05);
+	}
+	.download {
+		// .download__body
+		&__body {
+			background: rgba(0, 128, 0, 0.05);
+		}
+
+		&__circle {
+			&::before {
+				content: "";
+				border: 1px solid #008000;
+			}
+		}
+	}
+	.footer {
+		background: rgba(0, 128, 0, 0.05);
+		&__input {
+			background: rgba(38, 50, 56, 0.1);
+		}
+	}
+	.main-footer__logo {
+		img {
+			filter: invert(1);
+		}
+	}
+	.social {
+		// .social__item
+		&__item {
+			background-color: #008000;     
+		}
+	}
+}

@@ -34,6 +34,9 @@
 			max-width: 100%;
 		}
 	}
+	&__logo {
+		filter: invert(1);
+	}
 	// .header__menu
 	&__menu {
 	}

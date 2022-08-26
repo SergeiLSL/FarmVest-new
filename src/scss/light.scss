@@ -3,8 +3,25 @@
 		background-color: #ffffff;
 		color: #263238;
 	}
+
 	.header__logo {
 		filter: invert(1);
+	}
+
+	.header {
+		// Добавление классов к шапке time 01:16, раскоментировать стр 171 в app.js  
+		&._header-scroll {
+			background-color: rgba(0, 0, 0, 0.3); // прозрачность шапки
+		}
+	}
+
+	.menu__body {
+		@media (max-width: $mobile) {
+			background-color: #E5E5E5;
+			&::before {
+				background-color: #b4b2b2;
+			}
+		}
 	}
 	.icon-menu {
 		span,

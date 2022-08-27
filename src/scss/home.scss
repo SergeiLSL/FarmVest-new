@@ -133,6 +133,40 @@
 //====================================================================================================
 .partners {
 	@include adaptiveValue("padding-bottom", 200, 70);
+	&__theme{
+		width: 30px;
+		height: 30px;
+		flex: 0 0 30px;
+		cursor: pointer;
+		background: url('@img/icons/sun.svg') 0 0 / 100% no-repeat;
+	}
+	&__action{
+		position: relative;
+	}
+	&__reset{
+		opacity: 0;
+		visibility: hidden;
+	}
+	&____reset.active{
+		opacity: 1;
+		visibility: visible;
+	}
+	&__reset::before{
+		content:"x";
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+		width: 10px;
+		height: 10px;
+		font-size: 7px;
+		border-radius: 50%;
+		line-height: 10px;
+		color: #fff;
+		text-align: center;
+		background-color: #666;
+	}
+
 	// .partners__container
 	&__container {
 		display: flex;

@@ -82,6 +82,11 @@
 			<!-- ! Time 01:28:00 -->
 			<section class="page__partners partners">
 				<div class="partners__container-big">
+					<!-- ! Кнопки солнца и луны выводятся но не переключаются -->
+					<div class="partners__action">
+						<button type="button" class="partners__theme"></button>
+						<button type="button" class="partners__reset"></button>
+					</div>
 					<div class="partners__container">
 						<div class="partners__item">
 							<img src="@img/partners/01.svg" alt="Partners">
@@ -318,6 +323,7 @@
 	</div>
 	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
+	<script src="js/files/script.js"></script>
 </body>
 
 </html>

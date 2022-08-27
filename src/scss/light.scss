@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: light) {
-		body {
+	body {
 		background-color: #ffffff;
 		color: #263238;
 	}
@@ -13,6 +13,10 @@
 		&._header-scroll {
 			background-color: rgba(0, 0, 0, 0.3); // прозрачность шапки
 		}
+	}
+
+	.partners__theme{
+		background: url('@img/icons/moon.svg') 0 0 / 100% no-repeat;
 	}
 
 	.menu__body {
@@ -49,7 +53,7 @@
 	.title {
 		color: #263238;
 		span {
-			color: $greenColor;
+			color: #008000;
 		}
 	}
 	.image-block {
@@ -133,3 +137,6 @@
 		}
 	}
 }
+// html.light .page__theme {
+// 		background: url('@img/icons/moon.svg') 0 0 / 100% no-repeat;
+// 	}

@@ -15,6 +15,10 @@
 		}
 	}
 
+	.partners__theme{
+		background: url('@img/icons/moon.svg') 0 0 / 100% no-repeat;
+	}
+
 	.menu__body {
 		@media (max-width: $mobile) {
 			background-color: #E5E5E5;
@@ -49,7 +53,7 @@
 	.title {
 		color: #263238;
 		span {
-			color: $greenColor;
+			color: #008000;
 		}
 	}
 	.image-block {
@@ -133,3 +137,6 @@
 		}
 	}
 }
+// html.light .page__theme {
+// 		background: url('@img/icons/moon.svg') 0 0 / 100% no-repeat;
+// 	}
